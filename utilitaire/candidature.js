@@ -48,10 +48,10 @@ client.on('interaction', async (interaction) => {
         await candidatureMessage.delete();
 
         // ID du salon du serveur où envoyer la candidature
-        const targetChannelID = 'ID_DU_SALON_DANS_AUTRE_SERVEUR';
+        const targetChannelID = '1320111740020719698';
 
         // Récupération du serveur cible
-        const targetGuild = client.guilds.cache.get('ID_DU_AUTRE_SERVEUR');
+        const targetGuild = client.guilds.cache.get('1320111740020719698');
         if (!targetGuild) {
             return interaction.followUp("Le serveur cible n'a pas pu être trouvé.");
         }
